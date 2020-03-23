@@ -5,7 +5,7 @@ This is the seventh project of the Main HTML/CSS curriculum at [Microverse](http
 # Newsweek-Clone ([The Odin Project](https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap)
 
 
-![demopage]()
+![demopage](./images/screenshot.png)
 
 ## Built With
 
