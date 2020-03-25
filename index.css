@@ -39,13 +39,7 @@ img {
   max-width: 100%;
   vertical-align: middle;
   height: auto;
-}
-
-.container-fluid,
-.container {
-  max-width: 1310px;
-  margin-right: auto;
-  margin-left: auto;
+  cursor: pointer;
 }
 
 .page-header .container-fluid {
@@ -157,15 +151,19 @@ img {
 .bottom-border {
   background-color: white;
   border-bottom-color: #f4f5f6;
-
-  /* padding-top: 15px;
-  padding-bottom: 15px; */
   margin-top: -15px;
-
-  /* padding-bottom: 10px; */
   border-bottom-width: 2px;
   border-bottom-style: solid;
   z-index: 1;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  text-decoration: underline #f72210;
 }
 
 .page-header ul.nav-bar a {
@@ -246,4 +244,88 @@ ul.nav-bar li {
 
 .wrapper {
   position: relative;
+}
+
+.opinion .author {
+  font-size: 14px;
+  line-height: 21px;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.opinion .row,
+article.more-stories {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.row .opinion-news,
+.author span.author-span {
+  font: bold 17px/21px "Roboto Condensed", sans-serif;
+  color: black;
+}
+
+.featured-stories article {
+  padding-bottom: 20px;
+}
+
+div.row .story-title {
+  color: #272727;
+  font: 20px/22px "Lora", serif;
+}
+
+div.row .story-summary {
+  font: 15px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: rgba(39, 39, 39, 0.5);
+}
+
+div.col-3 .debates .debator-1 {
+  border-top: 4px solid #f92859;
+}
+
+div.col-3 .debates img {
+  position: absolute;
+  height: 100%;
+  width: auto;
+}
+
+.debates .author picture .img-1 {
+  position: absolute;
+  top: 32.7%;
+  left: 72%;
+  width: 26%;
+  height: 15%;
+}
+
+.debates .author picture .img-2 {
+  position: absolute;
+  top: 85.5%;
+  left: 72%;
+  width: 26%;
+  height: 15%;
+}
+
+.section-vs {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/40px "Roboto Condensed", sans-serif;
+  text-align: center;
+  margin: 14px auto 18px;
+}
+
+.background-border-1,
+.background-border-2 {
+  display: block;
+  background-color: #d9d9d9;
+  height: 1px;
+  margin-top: 1px;
+}
+
+div.col-3 .debates .debator-2 {
+  border-top: 4px solid #1c87fb;
 }
