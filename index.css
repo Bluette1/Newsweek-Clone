@@ -94,6 +94,15 @@ img {
   margin-left: 10px;
 }
 
+.filter-white {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(104deg) brightness(103%) contrast(103%);
+}
+
+.center-logo img {
+  width: 350px;
+  height: 60px;
+}
+
 .weather-widget .image-weather {
   width: 24px;
   height: 24px;
@@ -229,6 +238,10 @@ ul.nav-bar li {
   z-index: 1;
 }
 
+.blue-category-news {
+  color: #3581f4;
+}
+
 .news-title {
   font: bold 16px/16px "Roboto Condensed", sans-serif;
   text-transform: uppercase;
@@ -328,4 +341,67 @@ div.col-3 .debates img {
 
 div.col-3 .debates .debator-2 {
   border-top: 4px solid #1c87fb;
+}
+
+.sign-up-section {
+  max-width: 300px;
+  margin: 0 auto 30px;
+  border: 1px solid #e5e5e5;
+  background-color: #f4f5f6;
+  padding: 20px;
+}
+
+.sign-up-title {
+  font: bold 19px/19px "Roboto Condensed", sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.newsletter-icon {
+  display: block;
+  width: 43px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+  margin-right: 10px;
+}
+
+.bordered-section {
+  border: 1px solid #ddd;
+}
+
+.sign-up {
+  display: inline-block;
+  padding: 10px 10px 10px 12px;
+  color: white;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: #666;
+}
+
+.sign-up::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg) center/contain no-repeat;
+}
+
+.sign-up-update {
+  color: #333;
+  font: bold 15px/15px "Roboto Condensed", sans-serif;
+}
+
+.content-magazine {
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.magazine-title {
+  font: bold 19px/19px "Roboto Condensed", sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
 }
