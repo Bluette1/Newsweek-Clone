@@ -23,6 +23,7 @@ body {
   width: 100%;
   font-size: 15px;
   line-height: 20px;
+  color: #333;
 }
 
 a {
@@ -166,6 +167,34 @@ img {
   z-index: 1;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+  color: black;
+}
+
+h2.pt-4 {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 17px;
+  line-height: 20px;
+}
+
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
@@ -270,8 +299,8 @@ ul.nav-bar li {
 .opinion .row,
 article.more-stories {
   border-top: 1px solid #ddd;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .row .opinion-news,
@@ -290,23 +319,35 @@ div.row .story-title {
 }
 
 div.row .story-summary {
-  font: 15px/20px "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  color: rgba(39, 39, 39, 0.5);
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 div.col-3 .debates .debator-1 {
   border-top: 4px solid #f92859;
 }
 
+.content-magazine-images img {
+  height: 100%;
+  min-width: 100%;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  object-fit: cover;
+}
+
 div.col-3 .debates img {
   position: absolute;
   height: 100%;
   width: auto;
+  margin-top: -7px;
 }
 
 .debates .author picture .img-1 {
   position: absolute;
-  top: 32.7%;
+  top: 33.7%;
   left: 72%;
   width: 26%;
   height: 15%;
@@ -314,7 +355,7 @@ div.col-3 .debates img {
 
 .debates .author picture .img-2 {
   position: absolute;
-  top: 85.5%;
+  top: 84.5%;
   left: 72%;
   width: 26%;
   height: 15%;
@@ -359,7 +400,7 @@ div.col-3 .debates .debator-2 {
 
 .newsletter-icon {
   display: block;
-  width: 43px;
+  width: 29px;
   height: 28px;
   background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
   margin-right: 10px;
@@ -404,4 +445,74 @@ div.col-3 .debates .debator-2 {
   text-transform: uppercase;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 8px;
+}
+
+.content-magazine-images {
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+.content-magazine .see-all {
+  display: block;
+  background-color: #f4f5f6;
+  color: black;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px 10px 10px 12px;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  max-width: 98%;
+}
+
+.content-magazine .see-all:hover {
+  background-color: #dbdcdd;
+  display: block;
+  color: black;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.content-magazine .see-all::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  background: url(https://g.newsweek.com/www/images/icon-arrow-right-black.svg) center/contain no-repeat;
+}
+
+.content-magazine .features-category {
+  font: bold 16px/26px "Roboto Condensed", sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content-magazine .features-category span {
+  display: inline-block;
+}
+
+.content-magazine .features-category span.feature {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+}
+
+.picture-gallery-content .magazine-title .newsletter-icon {
+  position: relative;
+  margin-right: 13px;
+}
+
+.picture-gallery-content .magazine-title .newsletter-icon::after {
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+  display: block;
+  content: "";
+  width: 26px;
+  height: 25px;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
 }
