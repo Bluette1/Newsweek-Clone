@@ -344,6 +344,7 @@ div.col-3 .debates .debator-1 {
   height: 100%;
   width: 100%;
   margin-top: -7px;
+  min-height: 100px;
 }
 
 .debate-img-2 {
