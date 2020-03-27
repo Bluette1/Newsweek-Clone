@@ -338,11 +338,16 @@ div.col-3 .debates .debator-1 {
   object-fit: cover;
 }
 
-div.col-3 .debates img {
+.debate-img-1,
+.debate-img-2 {
   position: absolute;
   height: 100%;
-  width: auto;
+  width: 100%;
   margin-top: -7px;
+}
+
+.debate-img-2 {
+  height: 140%;
 }
 
 .debates .author picture .img-1 {
@@ -355,7 +360,7 @@ div.col-3 .debates img {
 
 .debates .author picture .img-2 {
   position: absolute;
-  top: 84.5%;
+  top: 85.5%;
   left: 72%;
   width: 26%;
   height: 15%;
