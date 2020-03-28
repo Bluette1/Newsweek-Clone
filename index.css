@@ -222,6 +222,10 @@ h6 a:hover {
   text-decoration: underline #f72210;
 }
 
+footer a:hover {
+  color: black;
+}
+
 .latest-news a:hover {
   color: #f72210;
 }
@@ -248,10 +252,23 @@ h6 a:hover {
   color: #000;
 }
 
+footer ul li {
+  padding-right: 16px;
+}
+
 ul.nav-bar li {
   flex-grow: 1;
   text-align: center;
   border-left-width: 1px;
+}
+
+footer .footer-bottom-links li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px 0;
+  border-right: 1px solid #d9d9d9;
+  padding-right: 8px;
+  margin-right: 10px;
 }
 
 .page-header ul.nav-bar li:not(:first-child) {
@@ -633,4 +650,13 @@ footer .footer-logo .cpy-right {
   text-transform: uppercase;
   color: #666;
   margin-bottom: 12px;
+}
+
+.editions-links label {
+  margin-top: 6px;
+  margin-right: 15px;
+}
+
+footer .menu-links ul {
+  flex-flow: row wrap;
 }
