@@ -293,6 +293,10 @@ footer .footer-bottom-links li {
   right: 82px;
 }
 
+.pic-profile img {
+  width: initial;
+}
+
 .container-fluid input[type="text"] {
   width: 60px;
   height: 20px;
@@ -648,6 +652,10 @@ div.row .story-summary {
   left: 80px;
 }
 
+.prev-magazine img {
+  width: initial;
+}
+
 .newsletter-area .img-background {
   background: url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5) center center / cover no-repeat;
 }
@@ -730,7 +738,7 @@ footer .menu-links ul {
   .weather-widget {
     position: absolute;
     left: 17%;
-    top: 3.3%;
+    top: 8.3%;
     z-index: 10;
   }
 
@@ -799,11 +807,21 @@ footer .menu-links ul {
 
 @media screen and  (min-width: 800px) and (max-width: 899px) {
   .row .col-9.opinion-news {
-    margin-left: -8rem;
+    margin-left: -6rem;
+  }
+
+  .latest .row .col-8.opinion-news {
+    margin-left: -9.7rem;
   }
 
   .center-logo img {
     left: -225%;
+  }
+
+  .debates .row .col-8.opinion-news {
+    margin-left: -6.7rem;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -817,6 +835,15 @@ footer .menu-links ul {
   .row .col-9.opinion-news {
     margin-left: -6rem;
   }
+
+  .debates .row .col-8.opinion-news {
+    margin-left: -5rem;
+  }
+
+  .current-magazine {
+    top: 18px;
+    left: 55px;
+  }
 }
 
 @media screen and  (max-width: 767px) {
@@ -825,7 +852,7 @@ footer .menu-links ul {
   }
 
   .row .col-8.opinion-news {
-    margin-left: -9rem;
+    margin-left: -8rem;
   }
 }
 
@@ -849,9 +876,26 @@ footer .menu-links ul {
   .page-header .subscribe {
     margin-right: 5px;
   }
+
+  .row .col-8.opinion-news {
+    margin-left: -6rem;
+  }
+
+  .current-magazine {
+    position: absolute;
+    top: 29px;
+    left: 56px;
+  }
 }
 
-@media screen and  (max-width: 640px) {
+@media screen and (max-width: 650px) {
+  .current-magazine {
+    top: 48px;
+    left: 37px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .weather-widget .country {
     display: none;
   }
@@ -878,6 +922,14 @@ footer .menu-links ul {
     left: 27%;
     top: 12.3%;
   }
+
+  .row .col-9.opinion-news {
+    margin-left: -3rem;
+  }
+
+  .row .col-8.opinion-news {
+    margin-left: -5rem;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 599px) {
@@ -898,10 +950,23 @@ footer .menu-links ul {
   .page-header .subscribe {
     margin-right: -8px;
   }
+
+  .row .col-8.opinion-news {
+    margin-left: -4rem;
+  }
+
+  .current-magazine {
+    top: 50px;
+    left: 12px;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 499px) {
   .row .col-9.opinion-news {
+    margin-left: -2rem;
+  }
+
+  .row .col-8.opinion-news {
     margin-left: -2rem;
   }
 
@@ -925,6 +990,20 @@ footer .menu-links ul {
   .weather-widget {
     left: 29%;
     top: 48.3%;
+  }
+
+  .current-magazine {
+    top: 40px;
+    left: 10px;
+    min-width: 130px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .current-magazine {
+    top: 40px;
+    left: 10px;
+    min-width: 100px;
   }
 }
 
@@ -955,6 +1034,18 @@ footer .menu-links ul {
   .page-header .subscribe {
     margin-right: -25px;
   }
+
+  .row .col-8.opinion-news {
+    margin-left: -1rem;
+  }
+
+  .debates .row .col-8.opinion-news {
+    margin-left: 0;
+  }
+
+  .row .col-9.opinion-news {
+    margin-left: -2rem;
+  }
 }
 
 @media screen and  (min-width: 300px) and (max-width: 399px) {
@@ -981,5 +1072,11 @@ footer .menu-links ul {
 
   .page-header .subscribe {
     margin-right: -15px;
+  }
+
+  .current-magazine {
+    top: 40px;
+    left: 10px;
+    min-width: 80px;
   }
 }
