@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="public/css/bootstrap.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto Condensed" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
     <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="prefixfree.min.js">
     <title>Newsweek clone</title>
   </head>
   <body>
-    <div class="row-1"><header class="page-header">
+    <div class="row">
+      <header class="page-header container-fluid w-100">
         <div class="header-1 d-flex justify-content-between align-items-center fixed-header">
           <p class="current-date">Sat, Mar 21, 2020</p>
           <div class="right-section">
@@ -35,6 +36,7 @@
                 </g>
               </svg>
             </a>
+            <a class="menu-icon" href="#"><i class="fas fa-bars fa-2x"></i></a>
           </div>
         </div>
           <div class="weather-widget">
@@ -69,10 +71,11 @@
               <input  name="Search" id="Search" placeholder="Search" type="text" class="search-input">
             </div>
           <div class="bottom-border"></div>
-    </header></div>
+    </header>
+  </div>
     <div class="main container-fluid">
       <div class="row first-main">
-        <div class="col-3 featured-stories">
+        <div class="col-lg-3 col-md-5 featured-stories">
           <div class="news-title">featured stories</div>
           <article>
             <div class="wrapper">
@@ -162,7 +165,7 @@
             </article>
           </div>
         </div>
-        <div class="col-6 top-story">
+        <div class="col-lg-6 col-md-7 top-story">
           <div class="news-title">top story</div>
           <article>
             <div class="wrapper">
@@ -170,7 +173,7 @@
                 <a href="#">u.s.</a>
               </div>
               <div class="picture">
-                <img src="images/donald-trump.webp" alt="donald-trump">
+                <img class="w-100" src="images/donald-trump.webp" alt="donald-trump">
               </div>
             </div>
             <h2 class="pt-4">'<a href="#">This Country Wasn't Built to be Shut Down,' Trump Says About Economy</a></h2>
@@ -311,11 +314,11 @@
             </div>
           </div>
         </div>
-        <div class="col-3 opinion">
+        <div class="col-lg-3 opinion">
           <div class="news-title">opinion</div>
           <div class="wrapper">
             <div class="row border-top-0 pt-0">
-              <div class="col-3 pic-profile">
+              <div class=" col-3 pic-profile ">
                 <img src="images/forman-andrew.webp" alt="profile picture">
               </div>
               <div class="col-9 opinion-news">
@@ -337,7 +340,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-3 pic-profile">
+              <div class="col-3  pic-profile">
                 <img src="images/richard-rubenstein.webp" alt="profile picture">
               </div>
               <div class="col-9 opinion-news">
@@ -371,8 +374,6 @@
                     <a href="#">Biden's Running Mate Needs to Win Him an Entire State, Not Just a Constituency</a>
                   </div>
                 </div>
-                <div class="background-border-1"></div>
-                <div class="background-border-2"></div>
                 <div class="row author h-100 pt-2 pb-2 d-flex justify-content-between border-top-0">
                  <p class="ml-3">By <span class="author-span">Peter Roff</span></p>
                   <picture><img class="img-1" src="images/roff-new.webp" alt="roff-new"></picture>
@@ -390,8 +391,6 @@
                     <a href="#">A Woman of Color VP Is More Than a Consolation Prize. It's a Necessity</a>
                   </div>
                 </div>
-                <div class="background-border-1"></div>
-                <div class="background-border-2"></div>
                 <div class="row author h-100 pt-2 pb-2 d-flex justify-content-between border-top-0">
                  <p class="ml-3">By <span class="author-span">Aimee Allison</span></p>
                   <picture><img class="img-2" src="images/aimee-allison.webp" alt="aimee-allison"></picture>
@@ -399,7 +398,7 @@
               </div>
             </div>   
           </div>
-          <div class="wrapper">
+          <div class="wrapper latest">
             <div class="news-title pt-4">latest news</div>
             <div class="row border-top-0 pt-0">
               <div class="col-4 pic-profile">
@@ -504,7 +503,7 @@
           <a href="#">in the magazine</a>
         </div>
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3">
             <div class="wrapper">
               <img src="images/march-20-27-2020-cover.webp" alt="march-20-27-2020-cover">
               <div class="news-category">
@@ -513,7 +512,7 @@
             </div>
             <a class="see-all gray" href="#">see all features</a>
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <div class="content-magazine-images">
               <a href="#"><img  src="images/bernie-sanders-medicare-all.webp" alt=""></a>
             </div>
@@ -523,7 +522,7 @@
             </div>
             <h5><a href="#">Is Bernie Sanders Right About Medicare For All?</a></h5>
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <div class="content-magazine-images">
               <a href="#"><img  src="images/crazy-market-01.webp" alt=""></a>
             </div>
@@ -533,7 +532,7 @@
             </div>
             <h5><a href="#">How to Stay Sane In a Crazy Market</a></h5>
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <div class="content-magazine-images">
               <a href="#"><img  src="images/per-hollywood-banner.webp" alt=""></a>
             </div>
@@ -545,7 +544,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3">
             <div class="content-magazine-images">
               <a href="#"><img  src="images/hor-btn-pandemics-01.webp" alt=""></a>
             </div>
@@ -555,7 +554,7 @@
             </div>
             <h5><a href="#">Past Pandemics By The Numbers and How Coronavirus Fits In</a></h5>
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <div class="content-magazine-images">
               <a href="#"><img  src="images/cul-uncharted-stadiums-banner.webp" alt=""></a>
             </div>
@@ -565,7 +564,7 @@
             </div>
             <h5><a href="#">The Grandest Olympic Stadiums of All Time</a></h5>
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <div class="content-magazine-images">
               <a href="#"><img  src="images/cul-ps-elainewelteroth.webp" alt=""></a>
             </div>
@@ -575,7 +574,7 @@
             </div>
             <h5><a href="#">Project Runway's Elaine Welteroth On How Fashion Can Be a Force for Change</a></h5>
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <div class="content-magazine-images">
               <a href="#"><img  src="images/aftermath.webp" alt=""></a>
             </div>
@@ -586,19 +585,19 @@
           </div>
         </div>
       </div>
-      <div class="editors-picks-content">
+      <div class="editors-picks-content container-fluid w-100 pr-0 mr-0">
         <div class="magazine-title d-flex align-items-center justify-content-center">
           <span class="newsletter-icon"></span>
           <a href="#">editor's picks</a>
         </div>
-        <div class="row">
-          <article class="col-3">
+        <div class="row justify-content-between">
+          <article class="col-lg-3 col-md-6">
             <div class="wrapper">
               <div class="news-category">
                 <a href="#">tech & science</a>
               </div>
               <div class="picture">
-                <img src="images/tibetan-buddhist-monk-debates-buddhist-related-issues.webp" alt="tibetan-buddhist-monk-debates-buddhist-related-issues">
+                <img class="w-100" src="images/tibetan-buddhist-monk-debates-buddhist-related-issues.webp" alt="tibetan-buddhist-monk-debates-buddhist-related-issues">
               </div>
             </div>
             <h3 class="pt-1"><a href="#">Daily Meditation May Help Protect the Brain from Aging, Study Suggests</a></h3>
@@ -606,13 +605,13 @@
               Yongey Mingyur Rinpoche has been practicing meditation for decades. A recently published study suggests his brain age is 33—eight years younger than his actual age.
             </div>
           </article>
-          <article class="col-3">
+          <article class="col-lg-3 col-md-6">
             <div class="wrapper">
               <div class="news-category">
                 <a href="#">tech & science</a>
               </div>
               <div class="picture">
-                <img src="images/unemployment-claims-skyrocket-coronavirus-outbreak.webp" alt="unemployment-claims-skyrocket-coronavirus-outbreak">
+                <img class="w-100" src="images/unemployment-claims-skyrocket-coronavirus-outbreak.webp" alt="unemployment-claims-skyrocket-coronavirus-outbreak">
               </div>
             </div>
             <h3 class="pt-1"><a href="#">What to Do if You Can't Get on Your State's Unemployment Website</a></h3>
@@ -620,13 +619,13 @@
               More than 280,000 Americans filed for unemployment benefits last week—a 33 percent spike from the previous week.
             </div>
           </article>
-          <article class="col-3">
+          <article class="col-lg-3 col-md-6">
             <div class="wrapper">
               <div class="news-category">
                 <a href="#">tech & science</a>
               </div>
               <div class="picture">
-                <img src="images/earth.webp" alt="earth">
+                <img class="w-100" src="images/earth.webp" alt="earth">
               </div>
             </div>
             <h3 class="pt-1"><a href="#">Coronavirus is having a major impact on the earth</a></h3>
@@ -634,13 +633,13 @@
               The COVID-19 pandemic is wreaking havoc on countries around the world, causing a global health crisis while forcing economies to shut down in the face of strict quarantine measures.
             </div>
           </article>
-          <article class="col-3">
+          <article class="col-lg-3 col-md-6">
             <div class="wrapper">
               <div class="news-category">
                 <a href="#">u.s.</a>
               </div>
               <div class="picture">
-                <img src="images/us-health-virus.webp" alt="earth">
+                <img class="w-100" src="images/us-health-virus.webp" alt="earth">
               </div>
             </div>
             <h3 class="pt-1"><a href="#">Dr. Fauci Says COVID-19 Testing 'Infinitely Better' Than It Was</a></h3>
@@ -650,13 +649,13 @@
           </article>
         </div>
         <div class="row pt-4">
-          <article class="col-3">
+          <article class="col-lg-3 col-md-6">
             <div class="wrapper">
               <div class="news-category">
                 <a href="#">culture</a>
               </div>
               <div class="picture">
-                <img src="images/reason-year-2020-has-been-so-bad-some-people-are-blaming-babynut.webp" alt="earth">
+                <img class="w-100" src="images/reason-year-2020-has-been-so-bad-some-people-are-blaming-babynut.webp" alt="earth">
               </div>
             </div>
             <h3 class="pt-1"><a href="#">The Reason 2020 Has Been So Bad? Some People Are Blaming #BabyNut</a></h3>
@@ -664,13 +663,13 @@
               "I can't name a single good thing that has happened since you were born. This is all your fault," one Twitter user wrote in reference to Planters' new baby mascot.
             </div>
           </article>
-          <article class="col-3">
+          <article class="col-lg-3 col-md-6">
             <div class="wrapper">
               <div class="news-category">
                 <a href="#">u.s.</a>
               </div>
               <div class="picture">
-                <img src="images/ice-air.webp" alt="ice-air">
+                <img class="w-100" src="images/ice-air.webp" alt="ice-air">
               </div>
             </div>
             <h3 class="pt-1"><a href="#">ICE Air Brings Dozens of Americans Home on Deportation Flight From Honduras</a></h3>
@@ -678,13 +677,13 @@
               A total of 64 U.S. citizens were on board the return leg of an ICE removal flight on Wednesday.
             </div>
           </article>
-          <article class="col-3">
+          <article class="col-lg-3 col-md-6">
             <div class="wrapper">
               <div class="news-category">
                 <a href="#">tech & science</a>
               </div>
               <div class="picture">
-                <img src="images/patient-hosptial.webp" alt="patient-hosptial">
+                <img class="w-100" src="images/patient-hosptial.webp" alt="patient-hosptial">
               </div>
             </div>
             <h3 class="pt-1"><a href="#">Psychologists Discuss L.A. Officials Backtracking on Teen's COVID-19 Death</a></h3>
@@ -692,13 +691,13 @@
               "Any threat to the health and well-being of children... has a significant psychological impact on adults and can trigger fear, anxiety, helplessness, and anger," one expert told Newsweek.
             </div>
           </article>
-          <article class="col-3">
+          <article class="col-lg-3 col-md-6">
             <div class="wrapper">
               <div class="news-category">
                 <a href="#">sports</a>
               </div>
               <div class="picture">
-                <img src="images/mlb-opening-day.webp" alt="mlb-opening-day">
+                <img class="w-100" src="images/mlb-opening-day.webp" alt="mlb-opening-day">
               </div>
             </div>
             <h3 class="pt-1"><a href="#">MLB Opening Day: Where to Watch Five Classic Season Openers on Thursday</a></h3>
@@ -714,7 +713,7 @@
           <a href="#">featured slideshows</a>
         </div>
         <div class="row">
-          <article class="col-4">
+          <article class="col-md-4">
             <div class="wrapper">
               <div class="news-category">
                 <a class="number" href="#">11</a>
@@ -725,7 +724,7 @@
             </div>
             <h4 class="pt-4"><a href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h4>
           </article>
-          <article class="col-4">
+          <article class="col-md-4">
             <div class="wrapper">
               <div class="news-category">
                 <a class="number" href="#">18</a>
@@ -736,7 +735,7 @@
             </div>
             <h4 class="pt-4"><a href="#">Active Volcanoes Around the World That Could Erupt at Any Moment</a></h4>
           </article>
-          <article class="col-4">
+          <article class="col-md-4">
             <div class="wrapper">
               <div class="news-category">
                 <a class="number" href="#">12</a>
@@ -754,15 +753,15 @@
          <a href="#">u.s.</a>
         </div>
         <div class="row">
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/nypd.webp" alt="nypd">
             <h4 class="pt-3"><a href="#">NYPD Announces First Employee Coronavirus Death</a></h4>
           </article>
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/elizabeth-warren.webp" alt="elizabeth-warren">
             <h4 class="pt-3"> <a href="#">Warren Says Trump Admin Preventing States From Buying Coronavirus Equipment</a></h4>
           </article>
-          <div class="col-4 latest-news">
+          <div class="col-md-4 latest-news">
             <div class="row border-top-0 pt-0">
               <div class="col-4 pic-profile">
                 <img src="images/mexico-border.webp" alt="profile picture">
@@ -795,15 +794,15 @@
           <a href="#">World</a>
          </div>
          <div class="row">
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/coronavirus-map-covid-19-countries-world.webp" alt="coronavirus-map-covid-19-countries-world">
             <h4 class="pt-3"><a href="#">Every Country in the Americas Now Has Coronavirus</a></h4>
           </article>
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/coronavirus-patient-discharged-china-feb-2020.webp" alt="coronavirus-patient-discharged-china-feb-2020">
             <h4 class="pt-3"> <a href="#">Over 120,000 People Have Recovered From Coronavirus Around the World</a></h4>
           </article>
-          <div class="col-4 latest-news">
+          <div class="col-md-4 latest-news">
             <div class="row border-top-0 pt-0">
               <div class="col-4 pic-profile">
                 <img src="images/figure-skating-championships-seoulfebruary-9-2020.webp" alt="figure-skating-championships-seoulfebruary-9-2020">
@@ -836,15 +835,15 @@
           <a href="#">Business</a>
          </div>
          <div class="row">
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/wall-street-bull.webp" alt="wall-street-bull">
             <h4 class="pt-3"><a href="#">Recession Will Be 'Steeper' Than Ever Before, Morgan Stanley CIO Says</a></h4>
           </article>
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/us-unemployment-jobs-economy-recession-coronavirus.webp" alt="us-unemployment-jobs-economy-recession-coronavirus">
             <h4 class="pt-3"> <a href="#">As Jobless Claims Surge, Here Are 7 Things To Do If You Lose Your Job</a></h4>
           </article>
-          <div class="col-4 latest-news">
+          <div class="col-md-4 latest-news">
             <div class="row border-top-0 pt-0">
               <div class="col-4 pic-profile">
                 <img src="images/charging-bull-wall-street.webp" alt="charging-bull-wall-street">
@@ -877,15 +876,15 @@
           <a href="#">Tech & Science</a>
          </div>
          <div class="row">
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/roborock-s5.webp" alt="roborock-s5">
             <h4 class="pt-3"><a href="#">Roborock S5 Max Review: Easily the Best Robot Vacuum We've Used</a></h4>
           </article>
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/rokid-smart-glasses.webp" alt="rokid-smart-glasses">
             <h4 class="pt-3"> <a href="#">Chinese AI Smart Glasses Check Temperature of Hundreds of People in Minutes</a></h4>
           </article>
-          <div class="col-4 latest-news">
+          <div class="col-md-4 latest-news">
             <div class="row border-top-0 pt-0">
               <div class="col-4 pic-profile">
                 <img src="images/ironbound-great-white-shark.webp" alt="ironbound-great-white-shark">
@@ -918,15 +917,15 @@
           <a href="#">Culture</a>
          </div>
          <div class="row">
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/everything-know-about-uncorked-release-netflix.webp" alt="everything-know-about-uncorked-release-netflix">
             <h4 class="pt-3"><a href="#">Everything You Need to Know About Netflix's New Wine Movie, 'Uncorked'</a></h4>
           </article>
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/maggie-gets-new-man-greys-anatomy-season-16-sneak-peek.webp" alt="maggie-gets-new-man-greys-anatomy-season-16-sneak-peek">
             <h4 class="pt-3"> <a href="#">Maggie Gets a New Man in 'Grey's Anatomy' Season 16 Sneak Peek</a></h4>
           </article>
-          <div class="col-4 latest-news">
+          <div class="col-md-4 latest-news">
             <div class="row border-top-0 pt-0">
               <div class="col-4 pic-profile">
                 <img src="images/donald-trump-steve-mnuchin-1.webp" alt="donald-trump-steve-mnuchin-1">
@@ -940,7 +939,7 @@
                 <img src="images/jojo-siwa.webp" alt="jojo-siwa">
               </div>
               <div class="col-8 opinion-news pl-2">
-                <a href="#"></a>JoJo Siwa Says 'Masked Singer' Grew Her Confidence When It Comes to Singing</a>
+                <a href="#">JoJo Siwa Says 'Masked Singer' Grew Her Confidence When It Comes to Singing</a>
               </div>   
             </div>
             <div class="row">
@@ -959,15 +958,15 @@
           <a href="#">Sports</a>
          </div>
          <div class="row">
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/wwe-drew-mcintyre-championship-brock-lesnar-raw.webp" alt="wwe-drew-mcintyre-championship-brock-lesnar-raw">
             <h4 class="pt-3"><a href="#">Drew McIntyre Talks WrestleMania 36</a></h4>
           </article>
-          <article class="col-4">
+          <article class="col-md-4">
             <img src="images/tom-brady-new-england-patriots.webp" alt="tom-brady-new-england-patriots">
             <h4 class="pt-3"> <a href="#">'TB x TB': Tom Brady Looks to Trademark Slogan After Joining Bucs</a></h4>
           </article>
-          <div class="col-4 latest-news">
+          <div class="col-md-4 latest-news">
             <div class="row border-top-0 pt-0">
               <div class="col-4 pic-profile">
                 <img src="images/lebron-james-kawhi-leonard-los-angeles-lakers.webp" alt="lebron-james-kawhi-leonard-los-angeles-lakers">
@@ -981,7 +980,7 @@
                 <img src="images/tom-brady-joe-montana.webp" alt="tom-brady-joe-montana">
               </div>
               <div class="col-8 opinion-news pl-2">
-                <a href="#"></a>Joe Montana Criticizes New England Patriots for Letting Tom Brady Leave</a>
+                <a href="#">Joe Montana Criticizes New England Patriots for Letting Tom Brady Leave</a>
               </div>   
             </div>
             <div class="row">
@@ -995,14 +994,14 @@
           </div>
         </div>
       </div>
-      <div class="subscribe-newsletter pt-5">
+      <div class="subscribe-newsletter pt-lg-5">
         <div class="row">
-          <div class="col-8">
+          <div class="col-lg-8">
             <div class="magazine-title">
               <a href="#">Subscribe</a>
              </div>
             <div class="row subscribe-area">
-              <div class="col-4 p-0">
+              <div class="col-4">
                 <div class="prev-magazine">
                   <img src="images/march-13-2020.jpg" alt="march-13-2020">
                 </div>
@@ -1010,7 +1009,7 @@
                    <img src="images/march-20-27-2020-cover.jpg" alt="march-20-27-2020-cover">
                  </div>
               </div>
-              <div class="col-8 pt-4 pl-4">
+              <div class="col-8 pt-lg-4 pl-lg-4">
                 <div>
                   <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
                   <p>All Access + Weekly Delivery. <br>
@@ -1020,7 +1019,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-lg-4">
             <div class="magazine-title">
               <a href="#">Newsletter</a>
              </div>
@@ -1037,30 +1036,28 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="pt-5 mt-5 pb-3">
-      <div class="bordered-section"></div>
-    </div>
-    <footer class="p-3">
+  </div>
+      <div class="container-fluid bordered-section-footer pt-5 mt-5 pb-3"></div>
+    <footer class="container-fluid p-3">
       <div class="menu-items d-flex justify-content-between">
         <div class="footer-logo d-flex">
           <a class="logo" href="#"><img class="filter-red" src="images/newsweek-logo.svg" alt=""></a>
           <p class="cpy-right mt-4">© 2020 Newsweek</p>
         </div>
         <ul class="d-flex mt-4">
-          <li><a class="facebook-icon" href="#"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a class="twitter-icon" href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="instagram-icon" href="#"><i class="fab fa-instagram"></i></a></li>
-          <li><a class="tumblr-icon" href="#"><i class="fab fa-tumblr"></i></a></li>
-          <li><a class="linkedin-icon" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a class="facebook-icon" href="#"><i class="fab fa-facebook-square fa-lg"></i></a></li>
+          <li><a class="twitter-icon" href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+          <li><a class="instagram-icon" href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+          <li><a class="tumblr-icon" href="#"><i class="fab fa-tumblr fa-lg"></i></a></li>
+          <li><a class="linkedin-icon" href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
         </ul>
       </div>
-      <div class="bordered-section"></div>
+      <div class="bordered-section-footer"></div>
       <div class="footer-bottom-links">
         <div class="editions-links d-flex">
-          <label for="Editions">
+          <p>
             <strong>Editions:</strong>
-          </label>
+          </p>
           <ul class="d-flex w-40">
             <li><a href="#">U.S. Edition</a></li>
             <li><a href="#">日本</a></li>

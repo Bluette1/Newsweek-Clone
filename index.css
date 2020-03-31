@@ -40,7 +40,13 @@ img {
   max-width: 100%;
   vertical-align: middle;
   height: auto;
+  max-height: 100%;
   cursor: pointer;
+  width: 100%;
+}
+
+img.arrow {
+  width: initial;
 }
 
 .page-header .container-fluid {
@@ -369,7 +375,7 @@ div.row .story-summary {
   line-height: 20px;
 }
 
-div.col-3 .debates .debator-1 {
+.debates .debator-1 {
   border-top: 4px solid #f92859;
 }
 
@@ -391,7 +397,7 @@ div.col-3 .debates .debator-1 {
   min-height: 100px;
 }
 
-.debates .author picture .img-1 {
+.debates .author .img-1 {
   position: absolute;
   top: 33.7%;
   left: 72%;
@@ -399,7 +405,7 @@ div.col-3 .debates .debator-1 {
   height: 15%;
 }
 
-.debates .author picture .img-2 {
+.debates .author .img-2 {
   position: absolute;
   top: 85.5%;
   left: 72%;
@@ -418,15 +424,7 @@ div.col-3 .debates .debator-1 {
   margin: 14px auto 18px;
 }
 
-.background-border-1,
-.background-border-2 {
-  display: block;
-  background-color: #d9d9d9;
-  height: 1px;
-  margin-top: 1px;
-}
-
-div.col-3 .debates .debator-2 {
+.debates .debator-2 {
   border-top: 4px solid #1c87fb;
 }
 
@@ -456,12 +454,16 @@ div.col-3 .debates .debator-2 {
   border: 1px solid #ddd;
 }
 
+.bordered-section-footer {
+  border-bottom: 1px solid #ddd;
+}
+
 .sign-up,
 .subscribe-newsletter-btn,
 .sign-up-btn {
   display: inline-block;
   padding: 10px 10px 10px 12px;
-  color: white;
+  color: #fff;
   font: bold 18px/18px "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -471,6 +473,12 @@ div.col-3 .debates .debator-2 {
 .subscribe-newsletter-btn,
 .sign-up-btn {
   background-color: #f72210;
+}
+
+.subscribe-newsletter-btn:hover,
+.sign-up-btn:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .sign-up::after,
@@ -652,11 +660,326 @@ footer .footer-logo .cpy-right {
   margin-bottom: 12px;
 }
 
-.editions-links label {
+.editions-links p {
   margin-top: 6px;
   margin-right: 15px;
 }
 
 footer .menu-links ul {
   flex-flow: row wrap;
+}
+
+.linkedin-icon:hover {
+  color: rgb(0, 96, 151);
+}
+
+.twitter-icon:hover {
+  color: rgb(29, 161, 242);
+}
+
+.instagram-icon:hover {
+  color: rgb(41, 98, 255);
+}
+
+.tumblr-icon:hover {
+  color: rgb(4, 2, 31);
+}
+
+.facebook-icon:hover {
+  color: rgb(56, 88, 152);
+}
+
+@media screen and (min-width: 992px) {
+  .page-header .menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .page-header .menu-icon {
+    margin-bottom: -26px;
+    vertical-align: middle;
+    color: rgb(192, 185, 185);
+  }
+
+  .page-header .subscribe {
+    margin-right: 12px;
+  }
+
+  nav.header-2::before,
+  .header-2.navbar {
+    display: none;
+  }
+
+  .search-icon,
+  .search-input,
+  .bottom-border {
+    display: none;
+  }
+
+  .center-logo img {
+    position: relative;
+    left: -255%;
+    width: 130px;
+  }
+
+  .page-header .current-date {
+    display: none;
+  }
+
+  .weather-widget {
+    position: absolute;
+    left: 17%;
+    top: 3.3%;
+    z-index: 10;
+  }
+
+  .page-header .right-section {
+    margin-left: 75%;
+  }
+
+  div.col-3.opinion {
+    display: none;
+  }
+
+  .debate-img-1,
+  .debate-img-2 {
+    width: 35%;
+  }
+
+  .debates .debator-1 p {
+    margin-top: 3rem;
+  }
+
+  .debates .debator-2 p {
+    margin-top: 1.5rem;
+  }
+
+  .debates .author .img-1,
+  .debates .author .img-2 {
+    width: 12%;
+    left: 87%;
+  }
+
+  .subscribe-area,
+  .newsletter-area {
+    padding: 15px;
+  }
+}
+
+@media screen and  (min-width: 900px) and (max-width: 991px) {
+  .row .col-9.opinion-news {
+    margin-left: -10rem;
+  }
+
+  .latest .row .col-8.opinion-news,
+  .debates .row .col-8.opinion-news {
+    margin-left: -12.7rem;
+  }
+}
+
+@media screen and  (max-width: 962px) {
+  .page-header .header-1 {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .page-header .right-section {
+    margin-left: 65%;
+  }
+
+  .center-logo img {
+    left: -240%;
+  }
+
+  .weather-widget {
+    left: 22%;
+  }
+}
+
+@media screen and  (min-width: 800px) and (max-width: 899px) {
+  .row .col-9.opinion-news {
+    margin-left: -8rem;
+  }
+
+  .center-logo img {
+    left: -225%;
+  }
+}
+
+@media screen and  (max-width: 835px) {
+  .center-logo img {
+    left: -200%;
+  }
+}
+
+@media screen and  (min-width: 700px) and (max-width: 799px) {
+  .row .col-9.opinion-news {
+    margin-left: -6rem;
+  }
+}
+
+@media screen and  (max-width: 767px) {
+  .center-logo img {
+    left: -190%;
+  }
+
+  .row .col-8.opinion-news {
+    margin-left: -9rem;
+  }
+}
+
+@media screen and  (min-width: 641px) and (max-width: 699px) {
+  .row .col-9.opinion-news {
+    margin-left: -4rem;
+  }
+
+  .weather-widget {
+    top: 12.9%;
+  }
+
+  .center-logo img {
+    width: 117px;
+  }
+
+  .page-header .right-section {
+    margin-left: 60%;
+  }
+
+  .page-header .subscribe {
+    margin-right: 5px;
+  }
+}
+
+@media screen and  (max-width: 640px) {
+  .weather-widget .country {
+    display: none;
+  }
+
+  .center-logo img {
+    left: -164%;
+  }
+
+  .page-header .right-section {
+    margin-left: 60%;
+    z-index: 10;
+  }
+
+  .page-header .menu-icon {
+    position: relative;
+    right: -40px;
+  }
+
+  .page-header .subscribe {
+    margin-right: -15px;
+  }
+
+  .weather-widget {
+    left: 27%;
+    top: 12.3%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+  .page-header .right-section {
+    margin-left: 50%;
+  }
+
+  .center-logo img {
+    left: -155%;
+    width: 114px;
+  }
+
+  .page-header .menu-icon {
+    position: relative;
+    right: -20px;
+  }
+
+  .page-header .subscribe {
+    margin-right: -8px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 499px) {
+  .row .col-9.opinion-news {
+    margin-left: -2rem;
+  }
+
+  .page-header .right-section {
+    margin-left: 45%;
+  }
+
+  .center-logo img {
+    left: -145%;
+    width: 102px;
+  }
+
+  .page-header .menu-icon {
+    right: -51px;
+  }
+
+  .page-header .subscribe {
+    margin-right: -42px;
+  }
+
+  .weather-widget {
+    left: 29%;
+    top: 48.3%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .center-logo img {
+    left: -155%;
+    width: 90px;
+    top: 20%;
+  }
+
+  .page-header .right-section {
+    margin-left: 30%;
+    margin-bottom: -18px;
+  }
+
+  .weather-widget {
+    display: none;
+  }
+
+  .page-header {
+    font: bold 14px/14px "Roboto Condensed", sans-serif;
+  }
+
+  .page-header .menu-icon {
+    margin-right: 7px;
+  }
+
+  .page-header .subscribe {
+    margin-right: -25px;
+  }
+}
+
+@media screen and  (min-width: 300px) and (max-width: 399px) {
+  .row .col-9.opinion-news {
+    margin-left: -1rem;
+  }
+
+  .page-header .menu-icon {
+    position: relative;
+    right: -22px;
+  }
+
+  .page-header .right-section {
+    margin-left: 28%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .center-logo img {
+    left: -130%;
+    width: 90px;
+    top: 20%;
+  }
+
+  .page-header .subscribe {
+    margin-right: -15px;
+  }
 }
