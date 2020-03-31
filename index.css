@@ -701,6 +701,10 @@ footer .menu-links ul {
   .page-header .menu-icon {
     display: none;
   }
+
+  .container-fluid .search-icon {
+    right: 63px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -932,7 +936,7 @@ footer .menu-links ul {
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 599px) {
+@media screen and (min-width: 500px) and (max-width: 605px) {
   .page-header .right-section {
     margin-left: 50%;
   }
