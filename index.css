@@ -24,6 +24,7 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #333;
+  overflow-x: hidden;
 }
 
 a {
@@ -428,6 +429,14 @@ div.row .story-summary {
   margin: 14px auto 18px;
 }
 
+.background-border-1,
+.background-border-2 {
+  display: block;
+  background-color: #d9d9d9;
+  height: 1px;
+  margin-top: 1px;
+}
+
 .debates .debator-2 {
   border-top: 4px solid #1c87fb;
 }
@@ -728,6 +737,27 @@ footer .menu-links ul {
 }
 
 @media screen and (max-width: 991px) {
+  .debates .author .img-1 {
+    top: 33.7%;
+    height: 20%;
+  }
+
+  .debates .author .img-2 {
+    top: 85.5%;
+    height: 20%;
+  }
+
+  .background-border-1,
+  .background-border-2 {
+    position: relative;
+    top: 58px;
+  }
+
+  .background-border-1.second,
+  .background-border-2.second {
+    top: 34px;
+  }
+
   .page-header .menu-icon {
     margin-bottom: -26px;
     vertical-align: middle;
@@ -871,6 +901,16 @@ footer .menu-links ul {
 }
 
 @media screen and  (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .subscribe,
+  .sign-in {
+    font-size: 15px;
+  }
+
   footer .footer-bottom-links li {
     border: 0 none;
     font-size: 14px;
@@ -938,6 +978,11 @@ footer .menu-links ul {
 }
 
 @media screen and (max-width: 640px) {
+  .subscribe,
+  .sign-in {
+    font-size: 13px;
+  }
+
   .weather-widget .country {
     display: none;
   }
@@ -1004,6 +1049,19 @@ footer .menu-links ul {
   }
 }
 
+@media screen and (max-width: 555px) {
+  .debates .author .img-1,
+  .debates .author .img-2 {
+    width: 18%;
+    left: 80%;
+  }
+
+  .pic-profile img.debate-img-1,
+  .pic-profile img.debate-img-2 {
+    width: 60%;
+  }
+}
+
 @media screen and (min-width: 401px) and (max-width: 499px) {
   .row .col-9.opinion-news {
     margin-left: -2rem;
@@ -1051,7 +1109,7 @@ footer .menu-links ul {
 
   .page-header .right-section {
     margin-left: 30%;
-    margin-bottom: -18px;
+    margin-bottom: -10px;
   }
 
   .weather-widget {
@@ -1081,9 +1139,24 @@ footer .menu-links ul {
   .row .col-9.opinion-news {
     margin-left: -2rem;
   }
+
+  .debates .author .img-1,
+  .debates .author .img-2 {
+    width: 28%;
+    left: 72%;
+  }
+
+  .pic-profile img.debate-img-1,
+  .pic-profile img.debate-img-2 {
+    width: 80%;
+  }
 }
 
 @media screen and  (min-width: 300px) and (max-width: 399px) {
+  body {
+    min-width: 320px;
+  }
+
   .row .col-9.opinion-news {
     margin-left: -1rem;
   }
@@ -1101,7 +1174,7 @@ footer .menu-links ul {
 
   .center-logo img {
     left: -130%;
-    width: 90px;
+    width: 85px;
     top: 20%;
   }
 
