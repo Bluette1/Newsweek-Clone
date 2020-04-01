@@ -697,6 +697,16 @@ footer .menu-links ul {
   color: rgb(56, 88, 152);
 }
 
+@media screen and (max-width: 1024px) {
+  .current-magazine {
+    min-width: 170px;
+  }
+
+  .text-subscribe-area {
+    margin-left: 50px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .page-header .menu-icon {
     display: none;
@@ -861,12 +871,43 @@ footer .menu-links ul {
 }
 
 @media screen and  (max-width: 767px) {
+  footer .footer-bottom-links li {
+    border: 0 none;
+    font-size: 14px;
+    display: inline-block;
+    padding-right: 15px;
+    margin: 6px 0;
+  }
+
   .center-logo img {
     left: -190%;
   }
 
   .row .col-8.opinion-news {
     margin-left: -8rem;
+  }
+
+  .subscribe-newsletter .magazine-title {
+    margin-top: 20px;
+  }
+
+  .magazine-pictures,
+  .text-subscribe-area,
+  .text-newsletter-area {
+    text-align: center;
+  }
+
+  .current-magazine {
+    top: 18px;
+    left: 292px;
+  }
+
+  .newsletter-area .img-background {
+    height: 160px;
+  }
+
+  .text-newsletter-area {
+    margin-top: -77px;
   }
 }
 
@@ -893,19 +934,6 @@ footer .menu-links ul {
 
   .row .col-8.opinion-news {
     margin-left: -6rem;
-  }
-
-  .current-magazine {
-    position: absolute;
-    top: 29px;
-    left: 56px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .current-magazine {
-    top: 48px;
-    left: 37px;
   }
 }
 
@@ -946,6 +974,12 @@ footer .menu-links ul {
   }
 }
 
+@media screen and (max-width: 615px) {
+  .current-magazine {
+    left: 222px;
+  }
+}
+
 @media screen and (min-width: 500px) and (max-width: 605px) {
   .page-header .right-section {
     margin-left: 50%;
@@ -967,11 +1001,6 @@ footer .menu-links ul {
 
   .row .col-8.opinion-news {
     margin-left: -4rem;
-  }
-
-  .current-magazine {
-    top: 50px;
-    left: 12px;
   }
 }
 
@@ -1005,19 +1034,11 @@ footer .menu-links ul {
     left: 29%;
     top: 10.3%;
   }
-
-  .current-magazine {
-    top: 40px;
-    left: 10px;
-    min-width: 130px;
-  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 469px) {
   .current-magazine {
-    top: 40px;
-    left: 10px;
-    min-width: 100px;
+    left: 150px;
   }
 }
 
@@ -1086,11 +1107,5 @@ footer .menu-links ul {
 
   .page-header .subscribe {
     margin-right: -15px;
-  }
-
-  .current-magazine {
-    top: 40px;
-    left: 10px;
-    min-width: 80px;
   }
 }
