@@ -45,6 +45,10 @@ img {
   width: 100%;
 }
 
+.pic-profile img {
+  width: initial;
+}
+
 img.arrow {
   width: initial;
 }
@@ -291,10 +295,6 @@ footer .footer-bottom-links li {
   position: absolute;
   top: -44px;
   right: 82px;
-}
-
-.pic-profile img {
-  width: initial;
 }
 
 .container-fluid input[type="text"] {
@@ -701,9 +701,19 @@ footer .menu-links ul {
   .page-header .menu-icon {
     display: none;
   }
+}
 
+@media screen and (max-width: 992px) {
   .container-fluid .search-icon {
-    right: 63px;
+    right: 59px;
+  }
+
+  .page-header .header-2::before {
+    width: 62px;
+  }
+
+  .container-fluid input[type="text"] {
+    right: 81px;
   }
 }
 
@@ -742,7 +752,7 @@ footer .menu-links ul {
   .weather-widget {
     position: absolute;
     left: 17%;
-    top: 8.3%;
+    top: 10.3%;
     z-index: 10;
   }
 
@@ -754,8 +764,8 @@ footer .menu-links ul {
     display: none;
   }
 
-  .debate-img-1,
-  .debate-img-2 {
+  .pic-profile img.debate-img-1,
+  .pic-profile img.debate-img-2 {
     width: 35%;
   }
 
@@ -866,7 +876,7 @@ footer .menu-links ul {
   }
 
   .weather-widget {
-    top: 12.9%;
+    top: 9.9%;
   }
 
   .center-logo img {
@@ -924,7 +934,7 @@ footer .menu-links ul {
 
   .weather-widget {
     left: 27%;
-    top: 12.3%;
+    top: 10.3%;
   }
 
   .row .col-9.opinion-news {
@@ -993,7 +1003,7 @@ footer .menu-links ul {
 
   .weather-widget {
     left: 29%;
-    top: 48.3%;
+    top: 10.3%;
   }
 
   .current-magazine {
