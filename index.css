@@ -716,13 +716,7 @@ footer .menu-links ul {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .page-header .menu-icon {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1095px) {
   .container-fluid .search-icon {
     right: 59px;
   }
@@ -768,25 +762,10 @@ footer .menu-links ul {
     margin-right: 12px;
   }
 
-  nav.header-2::before,
-  .header-2.navbar {
-    display: none;
-  }
-
-  .search-icon,
-  .search-input,
-  .bottom-border {
-    display: none;
-  }
-
   .center-logo img {
     position: relative;
     left: -255%;
     width: 130px;
-  }
-
-  .page-header .current-date {
-    display: none;
   }
 
   .weather-widget {
@@ -798,10 +777,6 @@ footer .menu-links ul {
 
   .page-header .right-section {
     margin-left: 75%;
-  }
-
-  div.col-3.opinion {
-    display: none;
   }
 
   .pic-profile img.debate-img-1,
@@ -859,6 +834,12 @@ footer .menu-links ul {
   }
 }
 
+@media screen and  (min-width: 900px) and (max-width: 950px) {
+  .latest .row .col-8.opinion-news {
+    margin-left: -10.7rem;
+  }
+}
+
 @media screen and  (min-width: 800px) and (max-width: 899px) {
   .row .col-9.opinion-news {
     margin-left: -6rem;
@@ -886,7 +867,8 @@ footer .menu-links ul {
 }
 
 @media screen and  (min-width: 700px) and (max-width: 799px) {
-  .row .col-9.opinion-news {
+  .row .col-9.opinion-news,
+  .latest .row .col-8.opinion-news {
     margin-left: -6rem;
   }
 
@@ -900,7 +882,7 @@ footer .menu-links ul {
   }
 }
 
-@media screen and  (max-width: 767px) {
+@media screen and (max-width: 767px) {
   body {
     font-size: 13px;
     line-height: 18px;
@@ -924,7 +906,7 @@ footer .menu-links ul {
   }
 
   .row .col-8.opinion-news {
-    margin-left: -8rem;
+    margin-left: -7.4rem;
   }
 
   .subscribe-newsletter .magazine-title {
@@ -1060,14 +1042,14 @@ footer .menu-links ul {
   .pic-profile img.debate-img-2 {
     width: 60%;
   }
+
+  .row .col-8.opinion-news {
+    margin-left: -2rem;
+  }
 }
 
 @media screen and (min-width: 401px) and (max-width: 499px) {
   .row .col-9.opinion-news {
-    margin-left: -2rem;
-  }
-
-  .row .col-8.opinion-news {
     margin-left: -2rem;
   }
 
@@ -1097,6 +1079,10 @@ footer .menu-links ul {
 @media screen and (max-width: 469px) {
   .current-magazine {
     left: 150px;
+  }
+
+  .row .col-8.opinion-news {
+    margin-left: -1rem;
   }
 }
 
@@ -1129,7 +1115,7 @@ footer .menu-links ul {
   }
 
   .row .col-8.opinion-news {
-    margin-left: -1rem;
+    margin-left: 0;
   }
 
   .debates .row .col-8.opinion-news {
@@ -1152,7 +1138,7 @@ footer .menu-links ul {
   }
 }
 
-@media screen and  (min-width: 300px) and (max-width: 399px) {
+@media screen and (max-width: 399px) {
   body {
     min-width: 320px;
   }

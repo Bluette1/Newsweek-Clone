@@ -32,6 +32,8 @@ This web page is built using the [Bootstrap](https://getbootstrap.com/docs/4.4/g
 
 👤 **Marylene Sawyer**
 - Github: [@Bluette1](https://github.com/Bluette1)
+- Twitter: [@MaryleneSawyer](https://twitter.com/MaryleneSawyer)
+- Linkedin: [Marylene Sawyer](https://www.linkedin.com/in/marylene-sawyer-b4ba1295/)
 
 ## 📝 License
 
