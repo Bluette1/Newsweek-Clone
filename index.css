@@ -18,6 +18,7 @@ html {
 }
 
 body {
+  max-width: 1440px;
   margin: 0 auto;
   height: 100%;
   width: 100%;
@@ -66,11 +67,10 @@ img.arrow {
 }
 
 .page-header .current-date {
-  margin-left: 15px;
   display: block;
   font: 16px/34px "Roboto Condensed", sans-serif;
   color: #fff;
-  margin-bottom: -26px;
+  margin-bottom: 30px;
 }
 
 .page-header .right-section {
@@ -98,11 +98,11 @@ img.arrow {
   color: #fff;
 }
 
-.page-header .subscribe svg {
-  fill: #f72210;
-  display: inline-block;
+img.filter-red {
   width: 8px;
   height: 14px;
+  margin-bottom: 4.92px;
+  overflow: hidden;
   margin-left: 10px;
 }
 
@@ -134,13 +134,11 @@ img.arrow {
 }
 
 .weather-widget {
-  position: absolute;
-  top: 10px;
-  left: 20px;
+  margin-left: 30px;
   font: 15px/34px "Roboto Condensed", sans-serif;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: -26px;
 }
 
 .weather-widget .country {
