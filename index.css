@@ -402,25 +402,13 @@ div.row .story-summary {
   min-height: 100px;
 }
 
-.debates .author .img-1 {
-  position: absolute;
-  top: 28.7%;
-  left: 72%;
-  width: 26%;
-}
-
-.debates .author .img-2 {
-  position: absolute;
-  top: 80.5%;
-  left: 72%;
-  width: 26%;
-}
-
 picture.debate-imgs {
+  position: relative;
   border-radius: 50%;
   width: 63px;
   height: 63px;
   overflow: hidden;
+  top: -31px;
 }
 
 .section-vs {
@@ -736,12 +724,12 @@ footer .menu-links ul {
 }
 
 @media screen and (max-width: 991px) {
-  .debates .author .img-1 {
-    top: 33.7%;
+  .debate-imgs.img-1 {
+    top: 24px;
   }
 
-  .debates .author .img-2 {
-    top: 85.5%;
+  .debate-imgs.img-2 {
+    top: 2px;
   }
 
   .background-border-1,
@@ -793,12 +781,6 @@ footer .menu-links ul {
 
   .debates .debator-2 p {
     margin-top: 1.5rem;
-  }
-
-  .debates .author .img-1,
-  .debates .author .img-2 {
-    width: 12%;
-    left: 87%;
   }
 
   .subscribe-area,
@@ -1030,12 +1012,6 @@ footer .menu-links ul {
 }
 
 @media screen and (max-width: 555px) {
-  .debates .author .img-1,
-  .debates .author .img-2 {
-    width: 18%;
-    left: 80%;
-  }
-
   .pic-profile img.debate-img-1,
   .pic-profile img.debate-img-2 {
     width: 60%;
@@ -1121,12 +1097,6 @@ footer .menu-links ul {
 
   .row .col-9.opinion-news {
     margin-left: -2rem;
-  }
-
-  .debates .author .img-1,
-  .debates .author .img-2 {
-    width: 28%;
-    left: 72%;
   }
 
   .pic-profile img.debate-img-1,
