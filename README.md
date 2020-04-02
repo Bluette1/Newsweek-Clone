@@ -26,7 +26,7 @@ This web page is built using the [Bootstrap](https://getbootstrap.com/docs/4.4/g
 
 ## Live Demo
 
-[Live Demo](https://rawcdn.githack.com/Bluette1/Newsweek-Clone/c410e25e776818940d534aff3d24f7632621ad5d/index.html)
+[Live Demo](https://rawcdn.githack.com/Bluette1/Newsweek-Clone/5b695aa7fb9c860a74c28ce3187e3c331c57a285/index.html)
 
 ## Authors
 
