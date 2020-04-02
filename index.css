@@ -1134,4 +1134,9 @@ footer .menu-links ul {
   .page-header .subscribe {
     margin-right: -15px;
   }
+
+  .debate-imgs.img-1,
+  .debate-imgs.img-2 {
+    left: -15px;
+  }
 }
