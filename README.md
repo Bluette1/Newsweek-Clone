@@ -5,7 +5,7 @@ This is the seventh project of the Main HTML/CSS curriculum at [Microverse](http
 # Newsweek-Clone ([The Odin Project](https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap)
 
 
-![demopage]()
+![demopage](./images/screenshot.png)
 
 ## Built With
 
@@ -26,12 +26,14 @@ This web page is built using the [Bootstrap](https://getbootstrap.com/docs/4.4/g
 
 ## Live Demo
 
-[Live Demo]()
+[Live Demo](https://rawcdn.githack.com/Bluette1/Newsweek-Clone/d38aad0ca73b6fab9e287abf94db3ae1dab2d17e/index.html)
 
 ## Authors
 
 👤 **Marylene Sawyer**
 - Github: [@Bluette1](https://github.com/Bluette1)
+- Twitter: [@MaryleneSawyer](https://twitter.com/MaryleneSawyer)
+- Linkedin: [Marylene Sawyer](https://www.linkedin.com/in/marylene-sawyer-b4ba1295/)
 
 ## 📝 License
 
