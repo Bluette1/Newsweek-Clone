@@ -157,13 +157,9 @@ img.filter-red {
 }
 
 .page-header .center-logo {
-  position: absolute;
   z-index: 3;
-  top: 0;
-  left: 33.3%;
-  padding: 15px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   background-color: #f72210;
 }
 
@@ -749,6 +745,14 @@ footer .menu-links ul {
 
   .page-header .subscribe {
     margin-right: 12px;
+  }
+
+  .center-logo {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 33.3%;
+    padding: 15px;
   }
 
   .center-logo img {
