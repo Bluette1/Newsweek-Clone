@@ -2,7 +2,7 @@
 
 branch="$(git rev-parse --abbrev-ref HEAD)"
 
-Do not commit directly to master at this stage
+# Do not commit directly to master at this stage
 if [ "$branch" = "master" ]; then
   echo "Committing directly to master branch is forbidden at this stage"
   exit 1 
